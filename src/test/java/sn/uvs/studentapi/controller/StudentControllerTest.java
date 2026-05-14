@@ -67,9 +67,8 @@ class StudentControllerTest {
         mockMvc.perform(post("/api/students")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(s)))
-                // .andExpect(status().isOk())
-                .andExpect(status().isNotFound());
-                //.andExpect(jsonPath("$.prenom").value("Ibrahima"));
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.prenom").value("Ibrahima"));
     }
 
     @Test
