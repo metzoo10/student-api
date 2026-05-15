@@ -43,7 +43,7 @@ mvn verify
 {
   "nom": "Diop",
   "prenom": "Awa",
-  "email": "awa@unchk.sn",
+  "email": "awa@uvs.sn",
   "moyenne": 14.5
 }
 ```
